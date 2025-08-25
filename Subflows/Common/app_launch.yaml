@@ -1,0 +1,5 @@
+
+---
+- clearState
+- launchApp
+- assertVisible: "Login"

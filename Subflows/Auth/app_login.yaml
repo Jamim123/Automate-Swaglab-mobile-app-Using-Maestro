@@ -1,0 +1,10 @@
+
+---
+
+- tapOn: "Email *"
+- inputText: ${USERNAME}
+- tapOn: "Password *"
+- inputText: ${PASSWORD}
+- hideKeyboard
+- tapOn: "Login"
+- assertVisible: "Select a Group:"

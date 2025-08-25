@@ -1,0 +1,6 @@
+
+---
+
+- tapOn: "Sign Out"
+- assertVisible: "*Are you sure you want to sign out?"
+- tapOn: "Sign Out"
