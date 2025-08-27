@@ -1,0 +1,16 @@
+app: 'C:\Automate SwagLabs Using Maestro\android.apk'
+appId: com.swaglabsmobileapp
+---
+- runFlow: ../Subflows/Auth/app_login.yaml
+
+- runFlow:
+    file: ../Subflows/Product_Page/add_to_cart.yaml
+    env:
+      PRODUCT: ${PRODUCT1}
+
+- runFlow:
+    file: ../Subflows/Product_Page/add_to_cart.yaml
+    env:
+      PRODUCT: ${PRODUCT2}
+
+- runFlow: ../Subflows/Auth/app_signout.yaml
