@@ -1,0 +1,15 @@
+app: 'C:\Automate SwagLabs Using Maestro\android.apk'
+appId: com.swaglabsmobileapp
+---
+
+- scrollUntilVisible:
+    element:
+      text: ${PRODUCT}
+    timeout: 30000
+    speed: 40
+    centerElement: true
+
+- tapOn:
+    text: "ADD TO CART"
+    below: ${PRODUCT}
+    index: 0
