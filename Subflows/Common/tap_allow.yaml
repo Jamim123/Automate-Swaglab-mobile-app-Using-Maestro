@@ -1,4 +1,5 @@
-
+app: "C:\Automate SwagLabs Using Maestro\android.apk"
+appID: com.swaglabsmobileapp
 ---
 - tapOn:
     text: "Allow"
