@@ -1,10 +1,17 @@
-
+app: 'C:\Automate SwagLabs Using Maestro\android.apk'
+appId: com.swaglabsmobileapp
 ---
+- runFlow: ../../Subflows/Common/app_launch.yaml
 
-- tapOn: "Email *"
-- inputText: ${USERNAME}
-- tapOn: "Password *"
-- inputText: ${PASSWORD}
-- hideKeyboard
-- tapOn: "Login"
-- assertVisible: "Select a Group:"
+- scrollUntilVisible:
+    element:
+      text:  ${PASSWORD}
+    direction: DOWN
+    timeout: 30000
+    speed: 40
+
+- tapOn:
+    below: "The currently accepted usernames for this application are (tap to autofill):"
+    index: 0
+
+- tapOn: "test-LOGIN"

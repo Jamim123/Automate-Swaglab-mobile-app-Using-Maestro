@@ -1,6 +1,9 @@
-
+app: 'C:\Automate SwagLabs Using Maestro\android.apk'
+appId: com.swaglabsmobileapp
 ---
 
-- tapOn: "Sign Out"
-- assertVisible: "*Are you sure you want to sign out?"
-- tapOn: "Sign Out"
+- tapOn:
+    above: "PRODUCTS"
+
+- tapOn: "LOGOUT"
+- assertVisible: "test-LOGIN"
